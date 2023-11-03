@@ -1,0 +1,8 @@
+<h1 style=" margin-left:20px;">Search</h1>
+
+<div style="margin-left:20px;margin-top: 50px;">
+  <label for="">Search here: </label> <input [(ngModel)]="searchText" type="search">
+ </div>
+ 
+ <div [innerHtml]="text | highlighter:searchText:'full'" style="margin-left:20px;margin-top:50px" >
+</div>
